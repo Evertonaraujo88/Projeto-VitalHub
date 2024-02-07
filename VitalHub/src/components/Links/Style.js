@@ -8,6 +8,13 @@ export const LinkMedium = styled.Text`
     align-self: flex-start;
     margin-left: 20px;
     text-decoration: underline;
+    margin-bottom: 15px;
     
 
+`
+
+export const LinKBold = styled(LinkMedium)`
+    color: #4d659d;
+    font-size: 16px;
+    
 `

@@ -6,8 +6,8 @@ import { RecuperarSenha } from './src/screens/RecuperarSenha/RecuperarSenha.js';
 import { Codigo } from './src/screens/Codigo/Codigo.js';
 
 //import Fontes
-import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium  } from '@expo-google-fonts/montserrat-alternates';
-
+import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold  } from '@expo-google-fonts/montserrat-alternates';
+import {Quicksand_500Medium } from '@expo-google-fonts/quicksand';
 
 
 
@@ -20,7 +20,9 @@ export default function App() {
 
   const [fontsLoaded, fontsError] = useFonts ({
     MontserratAlternates_600SemiBold,
-    MontserratAlternates_500Medium
+    MontserratAlternates_500Medium,
+    MontserratAlternates_700Bold,
+    Quicksand_500Medium
   })
 
     if (!fontsLoaded && ~fontsError) {
@@ -62,14 +64,14 @@ export default function App() {
         />
 
         <Stack.Screen
-          name= "Recuperar Senha"
+          name= "RecuperarSenha"
           component={RecuperarSenha}
           options={{title: "Recuperar Senha"}}
         
         />
 
         <Stack.Screen
-          name= "Código E-mail"
+          name= "CódigoEmail"
           component={Codigo}
           options={{title: "Código E-mail"}}
         

@@ -1,9 +1,15 @@
-import { Button, View } from "react-native";
+
 import { Container } from "../../components/Container/Style";
 import { Logo } from "../../components/Logo/Style";
 import { Title } from "../../components/Title/Style";
 import { Input } from "../../components/Input/Style";
-import { LinkMedium } from "../../components/Links/Style";
+import { LinKBold, LinkMedium } from "../../components/Links/Style";
+import { Button, ButtonGoogle} from "../../components/Botao/Style";
+import { ButtonTitle, ButtonTitleGoogle } from "../../components/BotaoTitulo/Style";
+import { GOOGLE } from "../../components/Google/Style";
+
+import { AntDesign } from '@expo/vector-icons';
+import { ContentAccount, TextAccount } from "./Style";
 
 export const Login = ({navigation}) => {
     return (
@@ -24,17 +30,23 @@ export const Login = ({navigation}) => {
 
                 <LinkMedium>Esqueceu sua senha?</LinkMedium>
 
-                {/* <Button>
-                    <ButtonTitle></ButtonTitle>
-                </Button> */}
+                <Button>
+                    <ButtonTitle>ENTRAR</ButtonTitle>
+                </Button>
 
-               {/*  <ButtonGoogle>
-                    <ButtonTitleGoogle></ButtonTitleGoogle>
-                </ButtonGoogle> */}
+               <ButtonGoogle>
+                   {/*  <GOOGLE source={require(`../../assets/images/GOOGLE.png`)}/> */}
+                   <AntDesign name="google" size={19} color="#496BBA" />
+                    <ButtonTitleGoogle>
+                        ENTRAR COM GOOGLE
+                    </ButtonTitleGoogle>
+                </ButtonGoogle>
 
-               {/*  <ContainerAccount>
-                    <TextAccount></TextAccount>
-                </ContainerAccount> */}
+               <ContentAccount>
+                    <TextAccount>
+                        Não tem conta? <LinKBold>Crie uma conta agora!</LinKBold>
+                    </TextAccount>
+                </ContentAccount>
 
            </Container>
     );

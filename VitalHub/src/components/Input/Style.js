@@ -14,3 +14,6 @@ export const Input = styled.TextInput.attrs({placeholderTextColor:'#34898f'})`
     font-family: 'MontserratAlternates_600SemiBold'; 
     
 `
+export const InputReperar = styled(Input)`
+ margin-bottom: 30px;
+`
