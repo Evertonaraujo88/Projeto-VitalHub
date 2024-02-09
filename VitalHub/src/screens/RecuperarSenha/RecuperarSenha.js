@@ -1,5 +1,5 @@
 
-import { Container } from "../../components/Container/Style";
+import { Container, ContainerLogo } from "../../components/Container/Style";
 import { Logo } from "../../components/Logo/Style";
 import { Title } from "../../components/Title/Style";
 
@@ -7,12 +7,19 @@ import { Text } from "../../components/Text/Text";
 import { Input, InputReperar } from "../../components/Input/Style";
 import { Button } from "../../components/Botao/Style";
 import { ButtonTitle } from "../../components/BotaoTitulo/Style";
+import { Entypo } from '@expo/vector-icons';
 
 export const RecuperarSenha = ({navigation}) => {
     return (
             <Container>
+                <ContainerLogo>
+
+                <Entypo name="arrow-with-circle-left" size={30} color="#34898F" />
 
                 <Logo source= {require(`../../assets/images/VitalHub_Logo1.png`)}/>
+
+                </ContainerLogo>
+                
 
                 <Title>Recuperar Senha</Title>
 
@@ -24,7 +31,7 @@ export const RecuperarSenha = ({navigation}) => {
                 />
 
                 <Button>
-                    <ButtonTitle>ENTRAR</ButtonTitle>
+                    <ButtonTitle>CONTINUAR</ButtonTitle>
                 </Button>
                 
             </Container>

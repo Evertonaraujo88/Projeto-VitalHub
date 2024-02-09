@@ -17,3 +17,13 @@ export const Input = styled.TextInput.attrs({placeholderTextColor:'#34898f'})`
 export const InputReperar = styled(Input)`
  margin-bottom: 30px;
 `
+
+export const InputCodigo = styled(Input)`
+ width: 65px;
+ height: 62px;
+
+ font-family: 'Quicksand_600SemiBold';
+ font-size: 40px;
+ padding: 5px 20px;
+ 
+`

@@ -4,7 +4,8 @@ export const Logo = styled.Image`
   width: 214px;
   height: 120px;
 
-  align-self: center;
-  margin: 20px 0px;
+  align-items: center;
+  margin: 0px 50px;
+  
     
 `

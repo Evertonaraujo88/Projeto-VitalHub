@@ -20,12 +20,12 @@ export const Login = ({navigation}) => {
                 <Title>Entrar ou criar conta</Title>
 
                 <Input
-                    placeholder = 'E-mail'
+                    placeholder = 'Usuário ou E-mail'
                 />
 
                 <Input
                     placeholder = 'senha'
-                    seureTextEntry
+                    secureTextEntry
                 />
 
                 <LinkMedium>Esqueceu sua senha?</LinkMedium>

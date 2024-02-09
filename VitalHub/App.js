@@ -7,7 +7,10 @@ import { Codigo } from './src/screens/Codigo/Codigo.js';
 
 //import Fontes
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold  } from '@expo-google-fonts/montserrat-alternates';
-import {Quicksand_500Medium } from '@expo-google-fonts/quicksand';
+import {Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
+import { NovaSenha } from './src/screens/NovaSenha/NovaSenha.js';
+import { Cadastro } from './src/screens/Cadastro/Cadastro.js';
+import { PerfilPaciente } from './src/screens/PerfilPaciente/PerfilPaciente.js';
 
 
 
@@ -22,7 +25,8 @@ export default function App() {
     MontserratAlternates_600SemiBold,
     MontserratAlternates_500Medium,
     MontserratAlternates_700Bold,
-    Quicksand_500Medium
+    Quicksand_500Medium,
+    Quicksand_600SemiBold
   })
 
     if (!fontsLoaded && ~fontsError) {
@@ -71,9 +75,30 @@ export default function App() {
         />
 
         <Stack.Screen
-          name= "CódigoEmail"
+          name= "Codigo"
           component={Codigo}
           options={{title: "Código E-mail"}}
+        
+        />
+
+        <Stack.Screen
+          name= "NovaSenha"
+          component= {NovaSenha}
+          options={{title: "Nova Senha"}}
+        
+        />
+
+        <Stack.Screen
+          name= "Cadastro"
+          component= {Cadastro}
+          options={{title: "Cadastro"}}
+        
+        />
+
+        <Stack.Screen
+          name= "PerfilPaciente"
+          component= {PerfilPaciente}
+          options={{title: "Perfil do Paciente"}}
         
         />
         
