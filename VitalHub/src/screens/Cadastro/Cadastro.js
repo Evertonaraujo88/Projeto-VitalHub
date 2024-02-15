@@ -21,7 +21,7 @@ export const Cadastro = ({navigation}) => {
                     placeholder = 'Usuário ou E-mail'
             />
             <Input
-                    placeholder = 'senha'
+                    placeholder = 'Senha'
                     secureTextEntry
             />
             <Input

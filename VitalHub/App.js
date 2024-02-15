@@ -11,6 +11,7 @@ import {Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/qu
 import { NovaSenha } from './src/screens/NovaSenha/NovaSenha.js';
 import { Cadastro } from './src/screens/Cadastro/Cadastro.js';
 import { PerfilPaciente } from './src/screens/PerfilPaciente/PerfilPaciente.js';
+import { Home } from './src/screens/Home/Home.js';
 
 
 
@@ -99,6 +100,13 @@ export default function App() {
           name= "PerfilPaciente"
           component= {PerfilPaciente}
           options={{title: "Perfil do Paciente"}}
+        
+        />
+
+        <Stack.Screen
+          name= "Home"
+          component= {Home}
+          options={{title: "Home"}}
         
         />
         
