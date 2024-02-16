@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const BoxUser = styled.View`
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 `
 
-export const ImageUser =styled.image`
+export const ImageUser =styled.Image`
     width: 60px;
     height: 60px;
 
@@ -14,7 +15,7 @@ export const ImageUser =styled.image`
 `
 
 export const DataUser = styled.View`
-
+ 
 `
 
 export const TextDefault = styled.Text`
@@ -25,5 +26,8 @@ export const TextDefault = styled.Text`
 `
 
 export const NameUser = styled.Text`
+    font-size: 16px;
+    font-family: 'MontserratAlternates_600SemiBold';
+    color: #FBFBFB;
 
 `

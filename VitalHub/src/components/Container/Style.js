@@ -35,4 +35,10 @@ export const ContainerHeader = styled(LinearGradient).attrs({
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
 `
+

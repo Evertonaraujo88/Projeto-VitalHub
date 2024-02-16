@@ -31,6 +31,7 @@ export const Navegacao = ({ navigation }) => {
         title="Home"
         onPress={() => navigation.navigate("Home")}
       />
+      
     </View>
   );
 };
