@@ -22,3 +22,10 @@ export const ContainerDados= styled.View`
 
     border: 2px solid red;
 `
+
+export const ContainerForm= styled.View`
+
+    width: 90%;
+    border: 2px solid red;
+
+`

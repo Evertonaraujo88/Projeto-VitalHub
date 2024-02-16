@@ -27,3 +27,12 @@ export const InputCodigo = styled(Input)`
  padding: 5px 20px;
  
 `
+export const InputPerfil = styled(Input)`
+    margin-top: 10px;
+    border: 2px solid #F5F3F3;
+    width: 100%;
+   /*  background-color: #F5F3F3; */
+
+    font-size: 14px;
+    font-family: 'MontserratAlternates_500Medium'
+`
