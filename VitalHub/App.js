@@ -7,7 +7,7 @@ import { Codigo } from './src/screens/Codigo/Codigo.js';
 
 //import Fontes
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold  } from '@expo-google-fonts/montserrat-alternates';
-import {Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
+import {Quicksand_500Medium, Quicksand_600SemiBold, Quicksand_400Regular} from '@expo-google-fonts/quicksand';
 import { NovaSenha } from './src/screens/NovaSenha/NovaSenha.js';
 import { Cadastro } from './src/screens/Cadastro/Cadastro.js';
 import { PerfilPaciente } from './src/screens/PerfilPaciente/PerfilPaciente.js';
@@ -27,7 +27,8 @@ export default function App() {
     MontserratAlternates_500Medium,
     MontserratAlternates_700Bold,
     Quicksand_500Medium,
-    Quicksand_600SemiBold
+    Quicksand_600SemiBold,
+    Quicksand_400Regular
   })
 
     if (!fontsLoaded && ~fontsError) {
