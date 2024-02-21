@@ -55,12 +55,12 @@ export const AppointmentCard = ({
                         <AntDesign 
                         name="clockcircle" 
                         size={14} 
-                        color={situacao == "pendente" ? "#49B3BA" : "8C8A97"}/>
+                        color={situacao == "pendente" ? "#49B3BA" : "#8C8A97"}/>
 
-                        <TextBoldClock
+                        <TextBold
                         situacao={situacao}
-                        color={"#49B3BA"}
-                        >14:00</TextBoldClock> 
+                        color={"49B3BA"}
+                        >14:00</TextBold> 
 
                     </ClockCard>
 
@@ -92,7 +92,7 @@ export const AppointmentCard = ({
 
 const styles = StyleSheet.create({
     shadow: {
-        elevation:20,
+        elevation:4,
         shadowColor: '#000000',
     }
 })
