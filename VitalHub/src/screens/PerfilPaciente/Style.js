@@ -12,7 +12,7 @@ export const ScrollForm = styled.View`
     width: 90%;
     align-items: center;
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 `
 
 export const ContainerDados= styled.View`
@@ -20,12 +20,12 @@ export const ContainerDados= styled.View`
     align-items: center;
     justify-content: center;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 `
 
 export const ContainerForm= styled.View`
 
     width: 90%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 `

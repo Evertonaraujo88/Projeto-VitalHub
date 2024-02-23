@@ -29,5 +29,34 @@ export const ButtonNovaSenha = styled(Button)`
     margin-top: 30px;
 `
 
+export const ButtonSecondary = styled(Button)`
+    background-color: transparent;
+    border: none;
+`
+export const ButtonTitle = styled.Text`
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "MontserratAlternates_700Bold";
+`;
+export const ButtonSecondaryTitle = styled(ButtonTitle)`
+text-transform: capitalize;
+text-decoration: underline;
+color: #344f8f;
+`
 
+
+export const ButtonCancel = styled.TouchableOpacity`
+  width: 148px;
+  height: 44px;
+
+  margin-top: 10px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+  font-family: "MontserratAlternates_500Medium";
+`;
 

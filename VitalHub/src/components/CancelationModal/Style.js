@@ -7,3 +7,10 @@ export const ContainerModal = styled.View`
     border-radius: 10px;
     align-items: center;
 `
+
+export const PatientModal = styled.View`
+    flex: 1;
+    align-items:center ;
+    justify-content: center ;
+    background-color: rgba(0, 0, 0, 0.6);
+    `

@@ -12,6 +12,8 @@ import { NovaSenha } from './src/screens/NovaSenha/NovaSenha.js';
 import { Cadastro } from './src/screens/Cadastro/Cadastro.js';
 import { PerfilPaciente } from './src/screens/PerfilPaciente/PerfilPaciente.js';
 import { Home } from './src/screens/Home/Home.js';
+import { ProntuarioMedico } from './src/screens/ProntuarioMedico/ProntuarioMedico.js';
+import { HomePaciente } from './src/screens/HomePaciente/HomePaciente.js';
 
 
 
@@ -108,6 +110,19 @@ export default function App() {
           name= "Home"
           component= {Home}
           options={{title: "Home"}}
+        
+        />
+        <Stack.Screen
+          name= "ProntuarioMedico"
+          component= {ProntuarioMedico}
+          options={{title: "Prontuário Médico"}}
+        
+        />
+
+<Stack.Screen
+          name= "HomePaciente"
+          component= {HomePaciente}
+          options={{title: "Prontuário Médico"}}
         
         />
         
