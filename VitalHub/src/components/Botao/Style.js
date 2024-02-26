@@ -58,5 +58,15 @@ export const ButtonCancel = styled.TouchableOpacity`
 
   font-size: 12px;
   font-family: "MontserratAlternates_500Medium";
-`;
+`
+export const ButtonQuery = styled.TouchableOpacity`
+  width: 88px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #60BFC5;
+  border-radius: 5px;
+`
 

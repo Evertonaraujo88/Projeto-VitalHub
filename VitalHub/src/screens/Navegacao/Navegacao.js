@@ -42,6 +42,11 @@ export const Navegacao = ({ navigation }) => {
         onPress={() => navigation.navigate("HomePaciente")}
       />
 
+      <Button
+        title="SelecionarClinica"
+        onPress={() => navigation.navigate("SelecionarClinica")}
+      />
+
     </View>
   );
 };

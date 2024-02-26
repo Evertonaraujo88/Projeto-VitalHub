@@ -14,7 +14,7 @@ export const ViewFooter = styled.View`
     margin-bottom: 16px;
 `
 
-export const ContentSteto = styled.View`
+export const ContentSteto = styled.TouchableOpacity`
     width:60px;
     height: 60px;
 
@@ -23,6 +23,9 @@ export const ContentSteto = styled.View`
 
     align-items: center;
     justify-content: center;
+
+    /* position: relative;
+    z-index: 10; */
 
 
 `

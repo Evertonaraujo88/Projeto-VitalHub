@@ -11,6 +11,7 @@ import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCar
 import { CancelationModal } from "../../components/CancelationModal/CancelationModal";
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal";
 import { FontAwesome6 } from '@expo/vector-icons';
+import { QueryModal } from "../../components/QueryModal/QueryModal";
 
 const Consultas = [
   { id: 1, nome: "Everton", situacao: "pendente" },
@@ -29,6 +30,7 @@ export const HomePaciente = ({ navigation }) => {
   //state para os modais
   const [showModalCancel, setShowModalCancel] = useState(false);
   const [showModalAppointment, setshowModalAppointment] = useState(false);
+  const [showModalQuery, setShowModalQuery] = useState(false);
 
   return (
     <Container>
@@ -93,11 +95,24 @@ export const HomePaciente = ({ navigation }) => {
 
         />
         
-       
+      
       <ViewFooter>
-        <ContentSteto style={styles.shadow}>
-            <FontAwesome6 name="stethoscope" size={32} color="white" />
+          
+         <ContentSteto style={styles.shadow} onPress={()=> setShowModalQuery(true)}>
+            
+            <FontAwesome6 
+              name="stethoscope" 
+              size={32} 
+              color="white" 
+            />
+
         </ContentSteto>
+
+        <QueryModal
+              visible= {showModalQuery}
+              setShowModalQuery={setShowModalQuery}    
+        />
+
       </ViewFooter>
     </Container>
   )

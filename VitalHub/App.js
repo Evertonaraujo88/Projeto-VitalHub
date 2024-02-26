@@ -14,6 +14,7 @@ import { PerfilPaciente } from './src/screens/PerfilPaciente/PerfilPaciente.js';
 import { Home } from './src/screens/Home/Home.js';
 import { ProntuarioMedico } from './src/screens/ProntuarioMedico/ProntuarioMedico.js';
 import { HomePaciente } from './src/screens/HomePaciente/HomePaciente.js';
+import { SelecionarClinica } from './src/screens/SelecionarClinica/SelecionarClinica.js';
 
 
 
@@ -119,12 +120,21 @@ export default function App() {
         
         />
 
-<Stack.Screen
+        <Stack.Screen
           name= "HomePaciente"
           component= {HomePaciente}
-          options={{title: "Prontuário Médico"}}
+          options={{title: "Home Paciente"}}
         
         />
+        
+        <Stack.Screen
+          name= "SelecionarClinica"
+          component= {SelecionarClinica}
+          options={{title: "Selecionar Clinica"}}
+        
+        />
+
+
         
       </Stack.Navigator>
 
