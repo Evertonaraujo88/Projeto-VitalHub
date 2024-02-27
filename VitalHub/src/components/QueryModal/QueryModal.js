@@ -13,9 +13,15 @@ import { ModalContent } from "../AppointmentModal/Style";
 import { ButtonCancel, ButtonQuery, ButtonSecondaryTitle } from "../Botao/Style";
 import { ButtonSalvar, InputDescricao } from "../../screens/ProntuarioMedico/Style";
 import { ButtonTitle } from "../BotaoTitulo/Style";
+import { useState } from "react";
+import { SelecionarClinica } from "../../screens/SelecionarClinica/SelecionarClinica";
 
 export const QueryModal = ({ visible, setShowModalQuery, ...rest }) => {
+
+  const [selecionarClinica, setSelecionarClinica] = useState(false);
+
   return (
+
     <Modal {...rest} visible={visible} transparent={true} animationType="fade"
     >
       <QueryContent>
@@ -41,10 +47,11 @@ export const QueryModal = ({ visible, setShowModalQuery, ...rest }) => {
           <Label textLabel={"Informe a localização desejada"} />
           <InputDescricaoQuery placeholder="Informe a localização" />
 
-          <ButtonSalvar>
+          <ButtonSalvar onPress={() => {setSelecionarClinica(true)}}>
             <ButtonTitle>CONTINUAR</ButtonTitle>
           </ButtonSalvar>
 
+       
           <ButtonCancel onPress={() => setShowModalQuery(false)}>
             <ButtonSecondaryTitle>Cancelar</ButtonSecondaryTitle>
           </ButtonCancel>
