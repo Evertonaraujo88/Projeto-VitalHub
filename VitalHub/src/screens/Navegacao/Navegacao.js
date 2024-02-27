@@ -27,26 +27,32 @@ export const Navegacao = ({ navigation }) => {
         onPress={() => navigation.navigate("PerfilPaciente")}
       />
 
-      <Button
-        title="Home"
-        onPress={() => navigation.navigate("Home")}
-      />
-      
+      <Button title="Home" onPress={() => navigation.navigate("Home")} />
+
       <Button
         title="ProntuarioMedico"
         onPress={() => navigation.navigate("ProntuarioMedico")}
       />
 
       <Button
-        title="HomePaciente"
+        title="Home Paciente"
         onPress={() => navigation.navigate("HomePaciente")}
       />
 
       <Button
-        title="SelecionarClinica"
+        title="Selecionar Clinica"
         onPress={() => navigation.navigate("SelecionarClinica")}
       />
 
+      <Button
+        title="Selecionar Medico"
+        onPress={() => navigation.navigate("SelecionarMedico")}
+      />
+
+      <Button
+        title="Selecionar Data"
+        onPress={() => navigation.navigate("SelecionarData")}
+      />
     </View>
   );
 };

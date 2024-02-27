@@ -8,8 +8,15 @@ import { ButtonSalvar } from "../../screens/ProntuarioMedico/Style";
 import { ButtonCancel, ButtonSecondaryTitle, ButtonTitle } from "../Botao/Style";
 
 
-export const AppointimentClinic = () => {
-    bairro = "São Paulo"
+export const AppointimentClinic = ({
+    
+    nomeClinica="",
+    bairro="",
+    avaliacao="",
+    atendimento=""
+}) => {
+
+
     return(
         <ContainerCardsListClinic style={styles.shadow}>
 
@@ -17,22 +24,22 @@ export const AppointimentClinic = () => {
 
             <ViewRow>
 
-                <TextClinic>Diamond Pró-Mulher</TextClinic>
+                <TextClinic>{nomeClinica}</TextClinic>
 
                 <ContainerNote>
                 <AntDesign name="star" size={22} color="#F9A620" />
-                <TextNote>4,8</TextNote>
+                <TextNote>{avaliacao}</TextNote>
 
                 </ContainerNote>
 
             </ViewRow>
             
             <ViewRow>
-                <TextBairro>São Paulo, SP</TextBairro>
+                <TextBairro>{bairro}</TextBairro>
 
                 <ConteinerService>
                 <MaterialCommunityIcons name="calendar" size={14} color="#49B3BA" />
-                <TextService>Seg-Sex</TextService>
+                <TextService>{atendimento}</TextService>
 
                 </ConteinerService>
 
