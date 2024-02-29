@@ -4,13 +4,14 @@ import { StyleSheet } from 'react-native';
 import moment from "moment";
 
 // import component StyledCalendarStrip
-import { StyledCalendarStrip } from './Style';
+import CalendarStrip from 'react-native-calendar-strip';
+import { CalendarStripStyle, StyledCalendarStrip } from './Style';
 
 //import fonts
 import { useFonts, MontserratAlternates_600SemiBold } from '@expo-google-fonts/montserrat-alternates';
 
 //component CalendarList
-const CalendarSelect = () => {
+export const CalendarSelect = () => {
 
   //hook useFonts
   const [fontsLoaded, fontsError] = useFonts({
@@ -59,7 +60,25 @@ const CalendarSelect = () => {
   //retorna o componente StyleCalendarStrip
   return (
 
-    <></>
+    <CalendarStrip
+      /* style={{height:150, paddingTop: 20, paddingBottom: 10}} */
+      calendarAnimation={{type: 'sequence', duration: 30}}
+                    daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'white'}}
+                    style={{height: 100, paddingTop: 20, paddingBottom: 10}}
+                    calendarHeaderStyle={{color: 'white'}}
+                    calendarColor={'#7743CE'}
+                    dateNumberStyle={{color: 'white'}}
+                    dateNameStyle={{color: 'white'}}
+                    highlightDateNumberStyle={{color: 'yellow'}}
+                    highlightDateNameStyle={{color: 'yellow'}}
+                    disabledDateNameStyle={{color: 'grey'}}
+                    disabledDateNumberStyle={{color: 'grey'}}
+                    datesWhitelist={datesWhitelist}
+                    datesBlacklist={datesBlacklist}
+                    iconLeft={require('../../../assets/left-arrow.png')}
+                    iconRight={require('../../../assets/right-arrow.png')}
+                    iconContainer={{flex: 0.1}}
+    />
 
 
   );
@@ -106,3 +125,5 @@ const styles = StyleSheet.create({
     borderHighlightColor: "#49B3BA"
   }
 })
+
+
