@@ -12,9 +12,9 @@ export const SelecionarData = () => {
         <Container>
         <TitleSelect>Selecionar Data</TitleSelect>
 
-        <ContainerCalendar>
+      {/*   <ContainerCalendar>
           <CalendarSelect/>
-        </ContainerCalendar>
+        </ContainerCalendar> */}
         
   
         <ContentButtons>

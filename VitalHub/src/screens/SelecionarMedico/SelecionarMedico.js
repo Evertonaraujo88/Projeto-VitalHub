@@ -6,6 +6,7 @@ import {
 } from "../../components/Botao/Style";
 import { Container } from "../../components/Container/Style";
 import { ListComponent } from "../../components/List/List";
+import { SchedulingModal } from "../../components/SchedulingModal/SchedulingModal";
 import { ButtonSalvar } from "../ProntuarioMedico/Style";
 import { ContentButtons, TitleSelect } from "../SelecionarClinica/Style";
 
@@ -69,11 +70,11 @@ export const SelecionarMedico = () => {
       />
 
       <ContentButtons>
-        <ButtonSalvar /* onPress={() => { setSelecionarClinica(true) }} */>
+        <ButtonSalvar onPress={() => SchedulingModal}>
           <ButtonTitle>CONTINUAR</ButtonTitle>
         </ButtonSalvar>
 
-        <ButtonCancel /* onPress={() => setShowModalQuery(false)} */>
+        <ButtonCancel /* onPress={() => SchedulingModal} */ >
           <ButtonSecondaryTitle>Cancelar</ButtonSecondaryTitle>
         </ButtonCancel>
       </ContentButtons>

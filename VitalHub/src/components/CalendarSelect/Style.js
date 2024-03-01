@@ -5,9 +5,9 @@ export const ContainerCalendar = styled.View`
     flex: 1;
 
 `
-export const CalendarStripStyle = styled(CalendarStrip)`
+/* export const CalendarStripStyle = styled(CalendarStrip)`
   height: 100px;
   width: 100%;
   margin: 20px 0px;
   padding: 0px;
-`
+` */
