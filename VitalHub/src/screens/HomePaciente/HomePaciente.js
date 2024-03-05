@@ -12,6 +12,7 @@ import { CancelationModal } from "../../components/CancelationModal/CancelationM
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal";
 import { FontAwesome6 } from '@expo/vector-icons';
 import { QueryModal } from "../../components/QueryModal/QueryModal";
+import { DoctorModal } from "../../components/DoctorModal/DoctorModal";
 
 const Consultas = [
   { id: 1, nome: "Everton", situacao: "pendente" },
@@ -31,6 +32,7 @@ export const HomePaciente = ({ navigation }) => {
   const [showModalCancel, setShowModalCancel] = useState(false);
   const [showModalAppointment, setshowModalAppointment] = useState(false);
   const [showModalQuery, setShowModalQuery] = useState(false);
+  const [showModalDoctor, setShowModalDoctor] = useState(true);
 
   return (
     <Container>
@@ -94,6 +96,12 @@ export const HomePaciente = ({ navigation }) => {
           setshowModalAppointment={setshowModalAppointment}
 
         />
+
+        <DoctorModal
+          visible={showModalDoctor}
+          setShowModalDoctor={setShowModalDoctor}
+        />
+
         
       
       <ViewFooter>
