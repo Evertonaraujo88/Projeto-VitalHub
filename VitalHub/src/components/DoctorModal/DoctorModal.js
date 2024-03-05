@@ -1,11 +1,9 @@
 import { ButtonSalvar } from "../../screens/ProntuarioMedico/Style";
 import { TitleSelect } from "../../screens/SelecionarClinica/Style";
-import { ButtonSecondaryTitle, ButtonTitle } from "../Botao/Style";
-
+import { ButtonCancel, ButtonSecondaryTitle, ButtonTitle } from "../Botao/Style";
 import { AlignBoxModal, ContentModal, ModalScheduling } from "../SchedulingModal/Style";
-import { ButtonCancel, ButtonSchedule } from "../button/style";
+import { ContentDoctor, ContainerBoxModal, DoctorImage, BoxInfoDoctor, InfoTextProfile } from "../DoctorModal/Style"
 
-import { BoxInfoDoctor, ContainerBoxModal, ContentModalDoctor, DoctorImage, InfoTextProfile } from "./Style";
 
 export const DoctorModal = ({ visible, setShowModalDoctor, ...rest }) => {
   return (
@@ -17,7 +15,8 @@ export const DoctorModal = ({ visible, setShowModalDoctor, ...rest }) => {
     >
       <ContentModal>
         <ContainerBoxModal>
-          <ContentModalDoctor>
+            
+          <ContentDoctor>
             <DoctorImage
               source={{ uri: "https:/github.com/evertonaraujo88.png" }}
             />
@@ -28,7 +27,7 @@ export const DoctorModal = ({ visible, setShowModalDoctor, ...rest }) => {
               <InfoTextProfile>Cliníco geral</InfoTextProfile>
               <InfoTextProfile>CRM-15286</InfoTextProfile>
             </BoxInfoDoctor>
-          </ContentModalDoctor>
+          </ContentDoctor>
 
           <AlignBoxModal>
             <ButtonSalvar>

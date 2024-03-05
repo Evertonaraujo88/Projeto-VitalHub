@@ -14,21 +14,24 @@ export const BoxInfoDoctor = styled.View`
 `
 
 export const ContainerBoxModal = styled.View`
-    width: 68%;
-    height: 310px;
+    width: 92%;
+    height: 60%;
     background-color: white;
     border-radius: 10px;
     align-items: center;
 `
 
-export const ContentModalDoctor = styled.View`
-    height: 72%;
-    width: 85%;
-`
 export const InfoTextProfile = styled.Text`
     font-family: Quicksand_500Medium;
     font-size: 14px;
     text-align: center;
     color: #5F5C6B;
 
+`
+
+
+export const ContentDoctor = styled.View`
+    height: 72%;
+    width: 85%;
+    align-items: center;
 `

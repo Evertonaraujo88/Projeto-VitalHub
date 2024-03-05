@@ -101,7 +101,7 @@ export const HomePaciente = ({ navigation }) => {
           visible={showModalDoctor}
           setShowModalDoctor={setShowModalDoctor}
         />
-
+ 
         
       
       <ViewFooter>
@@ -127,8 +127,43 @@ export const HomePaciente = ({ navigation }) => {
 }
 
 const styles = StyleSheet.create({
-    shadow: {
-        elevation:4,
-        shadowColor: '#000000',
-    }
+  iconsStyle: {
+      display: 'none'
+  },
+  calendarHeaderStyle: {
+      fontSize: 22,
+      textAlign: "center",
+      alignSelf: 'flex-start',
+      color: '#4E4B59',
+      fontFamily: "MontserratAlternates_600SemiBold",
+      paddingHorizontal: 16
+  },
+  nameDateStyle: {
+      color: "#ACABB7",
+      fontSize: 12,
+      textTransform: 'capitalize'
+  },
+  numberDateStyle: {
+      color: "#5F5C6B",
+      fontSize: 16
+  },
+  selectedDateNameStyle: {
+      color: "white",
+      fontSize: 12,
+      fontWeight: "bold",
+      textTransform: 'capitalize'
+  },
+  selectedDateNumberStyle: {
+      color: "white",
+      fontSize: 14
+  },
+  selectedContainerStyle: {
+      backgroundColor: `#60BFC5`
+  },
+  selectedAnimationStyle: {
+      type: "border",
+      duration: 200,
+      borderWidth: 2,
+      borderHighlightColor: "#49B3BA"
+  }
 })

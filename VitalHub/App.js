@@ -26,6 +26,7 @@ import { HomePaciente } from "./src/screens/HomePaciente/HomePaciente.js";
 import { SelecionarClinica } from "./src/screens/SelecionarClinica/SelecionarClinica.js";
 import { SelecionarMedico } from "./src/screens/SelecionarMedico/SelecionarMedico.js";
 import { SelecionarData } from "./src/screens/SelecionarData/SelecionarData.js";
+import { AppointmentLocation } from "./src/components/AppointmentLocation/AppointmentLocation.js";
 
 //Instacia do StackNavigator
 const Stack = createNativeStackNavigator();
@@ -132,7 +133,13 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="SelecionarData"
+          name="AppointmentLocation"
+          component={AppointmentLocation}
+          options={{ title: "Local Consulta" }}
+        />
+
+        <Stack.Screen
+          name="Local Consulta"
           component={SelecionarData}
           options={{ title: "Selecionar Data" }}
         />

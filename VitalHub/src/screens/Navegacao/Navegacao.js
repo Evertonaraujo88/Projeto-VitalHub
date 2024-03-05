@@ -54,10 +54,10 @@ export const Navegacao = ({ navigation }) => {
         onPress={() => navigation.navigate("SelecionarData")}
       />
 
-    {/*   <Button
-        title="Consulta Paciente"
-        onPress={() => navigation.navigate("HomePaciente")}
-      /> */}
+      <Button
+        title="Local Consulta "
+        onPress={() => navigation.navigate("AppointmentLocation")}
+      />
 
 
     </View>
