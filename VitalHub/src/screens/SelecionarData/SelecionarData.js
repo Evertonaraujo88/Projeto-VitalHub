@@ -37,6 +37,7 @@ LocaleConfig.defaultLocale = 'pt';
 export const SelecionarData = () => {
   const [selected, setSelected] = useState('');
   const [showModalScheduling, setShowModalScheduling] = useState(false);
+  
 
     return(
         <Container>

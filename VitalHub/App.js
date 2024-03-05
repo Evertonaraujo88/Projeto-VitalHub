@@ -27,6 +27,8 @@ import { SelecionarClinica } from "./src/screens/SelecionarClinica/SelecionarCli
 import { SelecionarMedico } from "./src/screens/SelecionarMedico/SelecionarMedico.js";
 import { SelecionarData } from "./src/screens/SelecionarData/SelecionarData.js";
 import { AppointmentLocation } from "./src/components/AppointmentLocation/AppointmentLocation.js";
+import { VisualizarPrescricao } from "./src/screens/VisualizarPrescricao/VisualizarPrescricao.js";
+import { Main } from "./src/screens/Main/Main.js";
 
 //Instacia do StackNavigator
 const Stack = createNativeStackNavigator();
@@ -57,21 +59,25 @@ export default function App() {
     <NavigationContainer>
       {/* componente para navegação */}
       <Stack.Navigator>
-        {/* TELA */}
         <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ title: "Login" }}
+        />
+        <Stack.Screen
+          name="Main"
+          component={Main}
+        />
+
+        {/* TELA */}
+        {/*       <Stack.Screen
           //nome da tela
           name="Navegacao Provisória"
           //componente que será chamado
           component={Navegacao}
           //titulo da tela
           options={{ title: "Navegação Provisória" }}
-        />
-
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          options={{ title: "Login" }}
-        />
+        /> */}
 
         <Stack.Screen
           name="RecuperarSenha"
@@ -139,9 +145,15 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="Local Consulta"
+          name="SelecionarData"
           component={SelecionarData}
           options={{ title: "Selecionar Data" }}
+        />
+
+        <Stack.Screen
+          name="VisualizarPrescricao"
+          component={VisualizarPrescricao}
+          options={{ title: "Visualizar Prescrição" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
