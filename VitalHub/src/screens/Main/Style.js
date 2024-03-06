@@ -8,7 +8,7 @@ export const ContentIcon = styled.View`
 
     border-radius: 18px;
     padding: 9px 12px;
-    background-color: ${ props => `${props.tabBarActiveBackgroundColor}`};
+    background-color: ${ props => `${props.tabBarActiveBackGroundColor}`};
 `
 
 export const TextIcon = styled.Text`

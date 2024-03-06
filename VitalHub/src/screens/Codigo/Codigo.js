@@ -11,12 +11,21 @@ import { Button } from "../../components/Botao/Style";
 import { ContentAccount } from "../Login/Style";
 
 export const Codigo = ({navigation}) => {
+
+    async function Login(){
+        navigation.navigate("Login")
+    }
+
+    async function NovaSenha(){
+        navigation.navigate("NovaSenha")
+    }
+
     return (
             <Container>
 
                 <ContainerLogo>
                 
-                <Fontisto name="close" size={30} color="#34898F" />
+                <Fontisto onPress ={()=> Login()} name="close" size={30} color="#34898F" />
                 <Logo source= {require(`../../assets/images/VitalHub_Logo1.png`)}/>
                 </ContainerLogo>
 
@@ -41,7 +50,7 @@ export const Codigo = ({navigation}) => {
                     
                 </ContainerCodigo>
 
-                <Button>
+                <Button onPress ={()=> NovaSenha()}>
                     <ButtonTitle>ENTRAR</ButtonTitle>
                 </Button>
 

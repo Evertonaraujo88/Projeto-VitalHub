@@ -29,11 +29,13 @@ export const Home = ({ navigation }) => {
   const [showModalCancel, setShowModalCancel] = useState(false);
   const [showModalAppointment, setshowModalAppointment] = useState(false);
 
+   
+
   return (
     <Container>
       <StatusBar />
 
-      <Header />
+      <Header/>
 
       <CalendarList />
 

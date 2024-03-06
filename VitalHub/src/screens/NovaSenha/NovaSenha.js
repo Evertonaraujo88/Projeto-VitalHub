@@ -8,12 +8,16 @@ import { Button, ButtonNovaSenha } from "../../components/Botao/Style";
 import { ButtonTitle } from "../../components/BotaoTitulo/Style";
 
 export const NovaSenha = ({navigation}) => {
+
+    async function Login(){
+        navigation.navigate("Login")
+    }
     return(
         <Container>
 
                 <ContainerLogo>
                 
-                <Fontisto name="close" size={30} color="#34898F" />
+                <Fontisto onPress ={()=> Login()} name="close" size={30} color="#34898F" />
                 <Logo source= {require(`../../assets/images/VitalHub_Logo1.png`)}/>
 
                 </ContainerLogo>
@@ -32,7 +36,7 @@ export const NovaSenha = ({navigation}) => {
                     secureTextEntry
                 />
 
-                <ButtonNovaSenha>
+                <ButtonNovaSenha onPress ={()=> Login()}>
                     <ButtonTitle>CONFIRMAR NOVA SENHA</ButtonTitle>
                 </ButtonNovaSenha>
                 

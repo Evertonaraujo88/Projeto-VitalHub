@@ -9,6 +9,11 @@ import { Title } from "../../components/Title/Style";
 import { ContentAccount } from "../Login/Style";
 
 export const Cadastro = ({navigation}) => {
+
+    async function Login(){
+        navigation.navigate("Login")
+      
+    }
     return(
         <Container>
             <Logo source= {require(`../../assets/images/VitalHub_Logo1.png`)}/>
@@ -29,13 +34,13 @@ export const Cadastro = ({navigation}) => {
                     secureTextEntry
             />
 
-            <ButtonNovaSenha>
+            <ButtonNovaSenha onPress ={()=> Login()}>
                 <ButtonTitle>CADASTRAR</ButtonTitle>
             </ButtonNovaSenha>
 
             <ContentAccount>
 
-                <LinKBold>Cancelar</LinKBold>
+                <LinKBold onPress ={()=> Login()}>Cancelar</LinKBold>
                    
             </ContentAccount>
         </Container>

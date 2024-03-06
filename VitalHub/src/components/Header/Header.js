@@ -4,9 +4,13 @@ import { ContainerHeader } from "../Container/Style";
 import { BoxUser, DataUser, ImageUser, NameUser, TextDefault } from "./Style";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-export const Header = () => {
+export const Header = ({navigation}) => {
+
+  async function Perfil() {
+    navigation.navigate("Perfil")
+}
   return (
-    <ContainerHeader>
+    <ContainerHeader onPress = {() => Perfil()}>
 
       <BoxUser>
         <ImageUser 

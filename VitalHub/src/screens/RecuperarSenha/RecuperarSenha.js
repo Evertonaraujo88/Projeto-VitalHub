@@ -10,11 +10,20 @@ import { ButtonTitle } from "../../components/BotaoTitulo/Style";
 import { Entypo } from '@expo/vector-icons';
 
 export const RecuperarSenha = ({navigation}) => {
+
+    async function Login(){
+        navigation.navigate("Login")
+    }
+
+    async function Codigo(){
+        navigation.navigate("Codigo")
+    }
+
     return (
             <Container>
                 <ContainerLogo>
 
-                <Entypo name="arrow-with-circle-left" size={30} color="#34898F" />
+                <Entypo onPress ={()=> Login()} name="arrow-with-circle-left" size={30} color="#34898F" />
 
                 <Logo source= {require(`../../assets/images/VitalHub_Logo1.png`)}/>
 
@@ -30,8 +39,8 @@ export const RecuperarSenha = ({navigation}) => {
                     placeholder = 'Usuário ou E-mail'
                 />
 
-                <Button>
-                    <ButtonTitle>CONTINUAR</ButtonTitle>
+                <Button onPress ={()=> Codigo()}>
+                    <ButtonTitle  >CONTINUAR</ButtonTitle>
                 </Button>
                 
             </Container>

@@ -15,6 +15,15 @@ export const Login = ({navigation}) => {
 
     async function Login(){
         navigation.navigate("Main")
+        /* navigation.replace("Main") */
+    }
+
+    async function RecuperarSenha() {
+        navigation.navigate("RecuperarSenha")
+    }
+
+    async function Cadastro() {
+        navigation.navigate("Cadastro")
     }
 
     return (
@@ -33,7 +42,8 @@ export const Login = ({navigation}) => {
                     secureTextEntry
                 />
 
-                <LinkMedium>Esqueceu sua senha?</LinkMedium>
+
+                <LinkMedium onPress ={()=> RecuperarSenha()}>Esqueceu sua senha?</LinkMedium>
 
                 <Button onPress ={()=> Login()}>
                     <ButtonTitle>ENTRAR</ButtonTitle>
@@ -49,7 +59,7 @@ export const Login = ({navigation}) => {
 
                <ContentAccount>
                     <TextAccount>
-                        Não tem conta? <LinKBold>Crie uma conta agora!</LinKBold>
+                        Não tem conta? <LinKBold onPress ={()=> Cadastro()}>Crie uma conta agora!</LinKBold>
                     </TextAccount>
                 </ContentAccount>
 
