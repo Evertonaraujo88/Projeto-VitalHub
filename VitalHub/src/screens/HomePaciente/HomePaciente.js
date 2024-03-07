@@ -34,16 +34,13 @@ export const HomePaciente = ({ navigation }) => {
   const [showModalQuery, setShowModalQuery] = useState(false);
   const [showModalDoctor, setShowModalDoctor] = useState(true);
 
-  async function Perfil() {
-    navigation.naigate("Perfil")
-  }
 
   return (
     <Container>
       <StatusBar />
 
       <Header 
-       onPress={()=> Perfil()}
+       navigation={navigation}
       />
 
       <CalendarList />
@@ -96,17 +93,20 @@ export const HomePaciente = ({ navigation }) => {
         <CancelationModal
           visible={showModalCancel}
           setShowModalCancel={setShowModalCancel}
+          navigation={navigation}
         />
           
         <AppointmentModal
           visible={showModalAppointment}
           setshowModalAppointment={setshowModalAppointment}
+          navigation={navigation}
 
         />
 
         <DoctorModal
           visible={showModalDoctor}
           setShowModalDoctor={setShowModalDoctor}
+          navigation={navigation}
         />
  
         

@@ -6,13 +6,10 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 export const Header = ({navigation}) => {
 
-  async function Perfil() {
-    navigation.navigate("Perfil")
-}
   return (
-    <ContainerHeader onPress = {() => Perfil()}>
+    <ContainerHeader >
 
-      <BoxUser>
+      <BoxUser onPress = {() => navigation.navigate ("PerfilPaciente")}>
         <ImageUser 
             source={{uri: "https:/github.com/evertonaraujo88.png"}}
         />

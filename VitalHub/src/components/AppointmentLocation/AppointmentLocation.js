@@ -13,7 +13,7 @@ import { AddressBox, AlignButton, ButtonBox, ContainerBackground, ContentAL, Dou
 
 
 
-export const AppointmentLocation = () => {
+export const AppointmentLocation = ({Navigation}) => {
     return(
         <Container>
 
@@ -53,7 +53,7 @@ export const AppointmentLocation = () => {
                     </DoubleContentBox>
 
                     <AlignButton>
-                        <ButtonBox>
+                        <ButtonBox onPress={ () => Navigation.replace("Main")}>
                             <LinkCancel>Voltar</LinkCancel>
                         </ButtonBox>
                     </AlignButton>

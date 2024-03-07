@@ -17,11 +17,13 @@ export const AppointmentCard = ({
     situacao = "pendente",
     onPressCancel,
     onPressAppointment,
+    navigation,
+
 
 }) =>{
     return(
         /* Container principal do card */
-        <ContainerCardsList style={styles.shadow}>
+        <ContainerCardsList style={styles.shadow} onPress={situacao =='pendente' ? onPressAppointment : null} >
 
             {/* Componente de imagem de perfil */}
             <ProfileImage
@@ -75,7 +77,7 @@ export const AppointmentCard = ({
                             </ButtonCard>
 
                         ) : (
-                            <ButtonCard onPress={onPressAppointment}>
+                            <ButtonCard onPress={profile == "Paciente" ? navigation.replace() : onPressAppointment}>
                                 <Buttonext situacao={situacao}>Ver Prontuário</Buttonext>
                             </ButtonCard>
                         )

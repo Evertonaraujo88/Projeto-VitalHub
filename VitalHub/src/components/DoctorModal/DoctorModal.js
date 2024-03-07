@@ -5,8 +5,16 @@ import { AlignBoxModal, ContentModal, ModalScheduling } from "../SchedulingModal
 import { ContentDoctor, ContainerBoxModal, DoctorImage, BoxInfoDoctor, InfoTextProfile } from "../DoctorModal/Style"
 
 
-export const DoctorModal = ({ visible, setShowModalDoctor, ...rest }) => {
+export const DoctorModal = ({ situacao, navigation, visible, setShowModalDoctor, ...rest }) => {
+  
+  async function handleClose(screen){
+      await setShowModalDoctor (false)
+
+      navigation.replace( screen)
+    }
   return (
+
+    
     <ModalScheduling
       {...rest}
       visible={visible}
@@ -29,10 +37,15 @@ export const DoctorModal = ({ visible, setShowModalDoctor, ...rest }) => {
             </BoxInfoDoctor>
           </ContentDoctor>
 
-          <AlignBoxModal>
+      {situacao != "pendente" ? (
             <ButtonSalvar>
               <ButtonTitle>Ver local da consulta</ButtonTitle>
             </ButtonSalvar>
+      ) : (
+          <></>  
+      )}
+          <AlignBoxModal>
+            
 
             <ButtonCancel onPress={() => setShowModalDoctor(false)}>
               <ButtonSecondaryTitle>Cancelar</ButtonSecondaryTitle>

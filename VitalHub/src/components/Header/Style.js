@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const BoxUser = styled.View`
+export const BoxUser = styled.TouchableOpacity.attrs({activeOpacity: 1})`
     flex-direction: row;
     align-items: center;
     gap: 10px;
+
 `
 
 export const ImageUser =styled.Image`

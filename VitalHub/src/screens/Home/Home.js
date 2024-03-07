@@ -29,6 +29,10 @@ export const Home = ({ navigation }) => {
   const [showModalCancel, setShowModalCancel] = useState(false);
   const [showModalAppointment, setshowModalAppointment] = useState(false);
 
+  //State para definir usuario
+
+  const [profile, setProfile] = useState("Paciente")
+
    
 
   return (
@@ -75,6 +79,7 @@ export const Home = ({ navigation }) => {
 
                  <AppointmentCard
                     situacao={item.situacao}
+                    navigation={navigation}
                     onPressAppointment={()=>setshowModalAppointment(true)}   
                     onPressCancel={()=>setShowModalCancel(true)}   
                 />

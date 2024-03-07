@@ -8,7 +8,7 @@ import { LinKBold } from "../Links/Style";
 import { ContainerModal, PatientModal } from "./Style";
 import { ButtonTitle } from "../BotaoTitulo/Style";
 
-export const CancelationModal = ({ visible, setShowModalCancel, ...rest }) => {
+export const CancelationModal = ({ navigation, visible, setShowModalCancel, ...rest }) => {
   return (
     <Modal {...rest} visible={visible} transparent={true} animationType="fade">
       <PatientModal>
