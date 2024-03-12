@@ -4,6 +4,10 @@ export const MapImage = styled.Image`
     width: 100%;
     height: 45%;
 `
+export const ViewMap = styled.View`
+    width: 100%;
+    height: 45%;
+`
 
 export const ContainerBackground = styled.View`
     background-color: #F5F3F3;

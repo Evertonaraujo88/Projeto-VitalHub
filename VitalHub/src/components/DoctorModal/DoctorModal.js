@@ -12,6 +12,10 @@ export const DoctorModal = ({ situacao, navigation, visible, setShowModalDoctor,
 
       navigation.replace( screen)
     }
+
+    async function Location() {
+      navigation.navigate("AppointmentLocation")
+  }
   return (
 
     
@@ -38,7 +42,7 @@ export const DoctorModal = ({ situacao, navigation, visible, setShowModalDoctor,
           </ContentDoctor>
 
       {situacao != "pendente" ? (
-            <ButtonSalvar>
+            <ButtonSalvar onPress={() => Location() }>
               <ButtonTitle>Ver local da consulta</ButtonTitle>
             </ButtonSalvar>
       ) : (
